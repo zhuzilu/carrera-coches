@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Carrera de coches</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><h1>🏎️ Carrera de coches 🏎️</h1></div>        
+        <label for="numero">Número de jugadores:</label>
+        <select id="participantes" autofocus>
+            <option value="">0</option> 
+            <option value="1">1</option> 
+            <option value="2">2</option> 
+            <option value="3">3</option>
+            <option value="4">4</option> 
+            <option value="5">5</option> 
+            <option value="6">6</option> 
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>        
+        <div class="contenedor-boton">
+            <button class="boton-iniciar" id="botoniniciar">Iniciar <span class="emoji">🏁</span></button>
+            <button class="boton-reiniciar" id="botonreiniciar">Reiniciar <span class="emoji">↩</span></button>
+        </div>
+
+    </header>
+
+    <div id="carrera"></div>
+    
+   <div id="tabla">
+       <div class="titulostabla">
+                <p>Coche</p>
+                <p>Posición</p>
+                <p>Velocidad</p>
+       </div>
+    </div>
+
+    <footer>PAC desarrollo diseño de interfaces <br> Lucía López Zas</footer>
+
+<!--    <div class="contenedor-carrera" id="contenedor-carrera" style="display: none;">
+        <div class="carretera" id="car1">
+            <img class="coche-img" src="./img/car1.png" alt="Car1">
+-->
+<!--        </div>
+        <div class="carretera" id="car2">
+            <img class="coche-img" src="./img/car2.png" alt="Car2">
+        </div>
+        <div class="carretera" id="car1">
+            <img class="coche-img" src="./img/car3.png" alt="Car1">
+        </div>
+        <div class="carretera" id="car2">
+            <img class="coche-img" src="./img/car4.png" alt="Car2">
+        </div>
+        <div class="carretera" id="car1">
+            <img class="coche-img" src="./img/car5.png" alt="Car1">
+        </div>
+        <div class="carretera" id="car2">
+            <img class="coche-img" src="./img/car6.png" alt="Car2">
+        </div>
+        <div class="carretera" id="car2">
+            <img class="coche-img" src="./img/car7.png" alt="Car2">
+        </div>
+        <div class="carretera" id="car1">
+            <img class="coche-img" src="./img/car8.png" alt="Car1">
+        </div>
+        <div class="carretera" id="car2">
+            <img class="coche-img" src="./img/car9.png" alt="Car2">
+        </div>
+    -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

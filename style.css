@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Press Start 2P', Helvetica, Arial;
+    color: var(--black);
+}
+
+:root {
+    --black: #221E22;
+    --white: #FBFEF9;
+    --red: #D1495B;
+    --yellow: #DB9D47;
+    --gray: #668586cc;;
+    --light-gray: rgb(102, 133, 134,0.2);
+    background-color: var(--light-gray);
+}
+
+body {
+    position: relative;
+    padding-bottom: 100px;
+    min-height: 100vh;
+}
+header {
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+h1 {
+    animation: slide-left 3s;
+    font-size: 200%;
+
+    margin: 30px 0 30px 0;
+    color: var(--red);
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(50rem);
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+.contenedor-boton {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.boton-iniciar{    
+    color: var(--black);
+    background-color: var(--yellow);
+}
+
+.boton-reiniciar{
+    color: var(--white);
+    background-color: var(--red);
+}
+
+.emoji {
+    font-size: 1.5rem;
+}
+
+.numero-participantes {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.contenedor-carrera {
+    background-color: var(--gray);
+    padding-top: 20px;
+}
+
+.coche-img {
+    width: 50px;
+    padding: 10px 0 20px 0;
+    margin-left: 0px;
+}
+
+.carretera {
+    width: 100%;
+    border-top: 2px dashed var(--white);
+}
+
+footer {
+    background-color: var(--yellow);
+    color: var(--black);
+    width: 100%;
+    padding: 15px;
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    line-height: 30px;
+}
+
+.titulostabla {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: var(--red);
+    gap: 20px;
+}
